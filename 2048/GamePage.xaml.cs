@@ -39,6 +39,22 @@ namespace _2048
                 }
             randomProduce();
             randomProduce();
+            buttons.Add(b11);
+            buttons.Add(b12);
+            buttons.Add(b13);
+            buttons.Add(b14);
+            buttons.Add(b21);
+            buttons.Add(b22);
+            buttons.Add(b23);
+            buttons.Add(b24);
+            buttons.Add(b31);
+            buttons.Add(b32);
+            buttons.Add(b33);
+            buttons.Add(b34);
+            buttons.Add(b41);
+            buttons.Add(b42);
+            buttons.Add(b43);
+            buttons.Add(b44);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -48,7 +64,7 @@ namespace _2048
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        enum DIRECTION { LEFT, RIGHT, UP, DOWN };
+        enum DIRECTION { LEFT, RIGHT, UP, DOWN, INVALID };
         DIRECTION direction;
         enum TYPE { t_0000, t_0001, t_0010, t_0011, t_0100, t_0101, t_0110, t_0111, t_1000, t_1001, t_1010, t_1011, t_1100, t_1101, t_1110, t_1111, t_null };
         TYPE[] types = new TYPE[4];
@@ -71,6 +87,8 @@ namespace _2048
         PointerPoint press;
         PointerPoint release;
         bool isMoved = true;
+        private List<Button> buttons = new List<Button>();
+
 
         private TYPE str2type(string t)
         {
@@ -192,7 +210,6 @@ namespace _2048
                     }
             }
         }
-
 
         private void detectTypes()
         {
@@ -353,7 +370,7 @@ namespace _2048
             }
         }
 
-        private void updateOnce()
+        private bool updateOnce()
         {
             Button b_1 = null, b_2 = null, b_3 = null, b_4 = null;
             int movedCount = 0;
@@ -380,13 +397,15 @@ namespace _2048
                     b_3 = (Button)FindName("b" + (i + 30));
                     b_4 = (Button)FindName("b" + (i + 40));
                 }
-                else
+                else if (direction == DIRECTION.DOWN)
                 {
                     b_1 = (Button)FindName("b" + (i + 40));
                     b_2 = (Button)FindName("b" + (i + 30));
                     b_3 = (Button)FindName("b" + (i + 20));
                     b_4 = (Button)FindName("b" + (i + 10));
                 }
+                else
+                    return false;
                 #region
                 switch (types[i - 1])
                 {
@@ -641,6 +660,7 @@ namespace _2048
             }
             if (movedCount == 4)
                 isMoved = false;
+            return true;
         }
 
         private bool gameOver()
@@ -680,6 +700,18 @@ namespace _2048
             return true;
         }
 
+        private void reset()
+        {
+            occupies.Clear();
+            remains.Clear();
+
+            foreach (var button in buttons)
+            {
+                occupies.Add(Convert.ToInt32(button.Name[1] + button.Name[2]));
+                button.Content = null;
+            }
+        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             Player = (Models.player)e.Parameter;
@@ -695,6 +727,7 @@ namespace _2048
                     AppViewBackButtonVisibility.Collapsed;
             }
         }
+
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             Player.CurrentScore = scores;
@@ -703,7 +736,9 @@ namespace _2048
                 Player.HighestScore = scores;
                 Player.update();
             }
+            reset();
         }
+
         //private void mousePressed(object sender, PointerRoutedEventArgs e)
         //{
         //    Pointer currentPoint = e.Pointer;
@@ -738,12 +773,13 @@ namespace _2048
 
         private void update()
         {
-            detectTypes();
-            updateOnce();
-            updateRO();
-            randomProduce();
             if (gameOver())
                 Frame.Navigate(typeof(GradePage), Player);
+            detectTypes();
+            bool updateSuccess = updateOnce();
+            updateRO();
+            if (updateSuccess)
+                randomProduce();
         }
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
@@ -782,17 +818,21 @@ namespace _2048
             double dy = release.Position.Y - press.Position.Y;
             if (Math.Abs(dx) > Math.Abs(dy))
             {
-                if (dx > 0)
+                if (dx > 5)
                     direction = DIRECTION.RIGHT;
-                else
+                else if (dx < -5)
                     direction = DIRECTION.LEFT;
+                else
+                    direction = DIRECTION.INVALID;
             }
             else
             {
-                if (dy < 0)
+                if (dy < -5)
                     direction = DIRECTION.UP;
-                else
+                else if (dy > 5)
                     direction = DIRECTION.DOWN;
+                else
+                    direction = DIRECTION.INVALID;
             }
             update();
         }

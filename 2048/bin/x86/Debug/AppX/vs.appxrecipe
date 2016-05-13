@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-13T06:00:20.397</Modified>
+      <Modified>2016-05-13T07:11:51.778</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\2048.exe">
       <PackagePath>entrypoint\2048.exe</PackagePath>
-      <Modified>2016-05-13T06:00:19.708</Modified>
+      <Modified>2016-05-13T07:11:51.220</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -558,11 +558,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-13T05:57:34.782</Modified>
+      <Modified>2016-05-13T06:38:58.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\Core\2048.exe">
       <PackagePath>2048.exe</PackagePath>
-      <Modified>2016-05-13T06:00:20.387</Modified>
+      <Modified>2016-05-13T07:11:51.773</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
