@@ -45,7 +45,13 @@ namespace _2048
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Player = (Models.player)e.Parameter;
+            try
+            {
+                Player = (Models.player)e.Parameter;
+            }
+            catch
+            {
+            }
             Frame rootFrame = Window.Current.Content as Frame;
              SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
             //if (rootFrame.CanGoBack)
