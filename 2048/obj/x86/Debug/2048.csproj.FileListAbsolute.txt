@@ -700,3 +700,6 @@ C:\Users\Administrator\2048\2048\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Administrator\2048\2048\bin\x86\Debug\NotificationsExtensions.winmd
 C:\Users\Administrator\2048\2048\obj\x86\Debug\2048.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\2048\2048\obj\x86\Debug\NotificationsExtensions.pri.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\NotificationsExtensions.winmd
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\NotificationsExtensions.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\obj\x86\Debug\NotificationsExtensions.pri.xml

@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.ServiceModel.Channels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Core;
 using Windows.UI.Input;
 using Windows.UI.Popups;
@@ -127,6 +128,7 @@ namespace _2048
             Button obj = (Button)FindName("b" + pos);
             obj.Content = 2;
             scores += (int)obj.Content;
+            obj.Background = new SolidColorBrush(Colors.PaleTurquoise);
         }
 
         public void setButtonStyle(Button button, int buttonContent)
@@ -135,10 +137,62 @@ namespace _2048
             {
                 case 2:
                     {
+                        button.Background = new SolidColorBrush(Colors.PaleTurquoise);
+                        break;
+                    }
+                case 4:
+                    {
+                        button.Background = new SolidColorBrush(Colors.PowderBlue);
+                        break;
+                    }
+                case 8:
+                    {
+                        button.Background = new SolidColorBrush(Colors.PaleGoldenrod);
+                        break;
+                    }
+                case 16:
+                    {
+                        button.Background = new SolidColorBrush(Colors.Wheat);
+                        break;
+                    }
+                case 32:
+                    {
+                        button.Background = new SolidColorBrush(Colors.Pink);
+                        break;
+                    }
+                case 64:
+                    {
+                        button.Background = new SolidColorBrush(Colors.HotPink);
+                        break;
+                    }
+                case 128:
+                    {
+                        button.Background = new SolidColorBrush(Colors.Plum);
+                        break;
+                    }
+                case 256:
+                    {
+                        button.Background = new SolidColorBrush(Colors.Violet);
+                        break;
+                    }
+                case 512:
+                    {
+                        button.Background = new SolidColorBrush(Colors.SpringGreen);
+                        break;
+                    }
+                case 1048:
+                    {
+                        button.Background = new SolidColorBrush(Colors.LawnGreen);
+                        break;
+                    }
+                case 2048:
+                    {
+                        button.Background = new SolidColorBrush(Colors.Yellow);
                         break;
                     }
             }
         }
+
 
         private void detectTypes()
         {
@@ -287,6 +341,16 @@ namespace _2048
             else
                 occupies.Add(44);
 
+            foreach (var item in occupies)
+            {
+                var b = (Button)FindName("b" + item);
+                setButtonStyle(b, (int)b.Content);
+            }
+            foreach (var item in remains)
+            {
+                var b = (Button)FindName("b" + item);
+                b.Background = new SolidColorBrush(Colors.White);
+            }
         }
 
         private void updateOnce()

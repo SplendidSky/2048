@@ -30,8 +30,11 @@ namespace _2048
             viewTitleBar.BackgroundColor = Windows.UI.Colors.CornflowerBlue;
             viewTitleBar.ButtonBackgroundColor = Windows.UI.Colors.CornflowerBlue;
         }
+        private Models.player Player;
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            Player = (Models.player)e.Parameter;
             Frame rootFrame = Window.Current.Content as Frame;
             if (rootFrame.CanGoBack)
             {
@@ -47,7 +50,7 @@ namespace _2048
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(GamePage), "");
+            Frame.Navigate(typeof(GamePage), Player);
         }
     }
 }
