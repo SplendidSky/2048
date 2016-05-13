@@ -24,8 +24,11 @@
         </Grid.RowDefinitions>
 
         <TextBlock x:Name="title_2048" Grid.Row="0"  Text="GG"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource TextBlockStyle2}"/>
-        <TextBlock x:Name="GradeText" Grid.Row="1" Margin="50,0,0,0" Text="{x:Bind Player.CurrentScore}"  HorizontalAlignment="Left" Style="{StaticResource TextBlockStyle}"/>
-        <TextBlock x:Name="MaxGrade" Grid.Row="2"  Text="{x:Bind Player.HighestScore}" Margin="50,0,0,0"   HorizontalAlignment="Left" Style="{StaticResource TextBlockStyle}"/>
+        <TextBlock x:Name="GradeText_" Grid.Row="1"  HorizontalAlignment="Center" Margin="-200,20,0,0"  Text="得分:" Style="{StaticResource TextBlockStyle}"/>
+        <TextBlock x:Name="GradeText" Grid.Row="1" Margin="150,20,0,0" Text="{x:Bind Player.CurrentScore}"  HorizontalAlignment="Center" Style="{StaticResource TextBlockStyle}"/>
+        <TextBlock x:Name="MaxGrade_" Grid.Row="2"  Text="最高分:"  HorizontalAlignment="Center" Margin="-200,20,0,0" Style="{StaticResource TextBlockStyle}"/>
+        <TextBlock x:Name="MaxGrade" Grid.Row="2"  Text="{x:Bind Player.HighestScore}" Margin="150,20,0,0"  HorizontalAlignment="Center" Style="{StaticResource TextBlockStyle}"/>
+
         <Button x:Name="share_button" Grid.Row="5" Content="分享得分" Height="45" Width="150" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Top" Style="{StaticResource ButtonStyle}" Click="share_button_Click"/>
         <Button x:Name="restart_button" Grid.Row="5" Content="重新开始" Height="45" Width="150" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Top" Style="{StaticResource ButtonStyle}" Click="restart_button_Click"/>
     </Grid>

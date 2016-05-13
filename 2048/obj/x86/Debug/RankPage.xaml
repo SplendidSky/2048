@@ -23,7 +23,7 @@
         </Grid.RowDefinitions>
 
         
-        <TextBlock x:Name="RuleText" Grid.Row="0" Text="排行榜"  HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource TextBlockStyle3}"/>
+        <TextBlock x:ConnectionId='1' x:Name="RuleText" Grid.Row="0" Text="排行榜"  HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource TextBlockStyle3}"/>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -98,6 +98,7 @@
             <TextBlock Text="555" Grid.Column="2" Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Text="555" Grid.Column="3" Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
-        <Button x:Name="StartButton" Grid.Row="7" Grid.Column="2" Content="开始游戏" Height="45" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource ButtonStyle}" Click="StartButton_Click"/>
+        <Button x:ConnectionId='2' x:Name="StartButton" Grid.Row="7" Grid.Column="2" Content="开始游戏" Height="45" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource ButtonStyle}"                          />
     </Grid>
 </Page>
+

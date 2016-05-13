@@ -737,6 +737,9 @@ namespace _2048
                 Player.update();
             }
             reset();
+            Window.Current.CoreWindow.KeyDown -= CoreWindow_KeyDown;
+            Window.Current.CoreWindow.PointerPressed -= CoreWindow_PointerPressed;
+            Window.Current.CoreWindow.PointerReleased -= CoreWindow_PointerReleased;
         }
 
         //private void mousePressed(object sender, PointerRoutedEventArgs e)
