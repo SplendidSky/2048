@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLitePCL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -55,7 +56,10 @@ namespace _2048
             buttons.Add(b42);
             buttons.Add(b43);
             buttons.Add(b44);
+            updateranking();
         }
+        string[] rankname = new string[5];
+        string[] ranknum = new string[5];
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -89,7 +93,27 @@ namespace _2048
         bool isMoved = true;
         private List<Button> buttons = new List<Button>();
 
+        private void updateranking()
+        {
+            int i = 0;
+            var db = App.conn;
+            try
+            {
+                using (var statement = db.Prepare("SELECT * FROM Players ORDER BY HighestScore DESC LIMIT 5"))
+                {
+                    while (statement.Step() == SQLiteResult.ROW)
+                    {
+                        rankname[i] = ((string)statement[1]);
+                        ranknum[i] = ((long)statement[4]) + "";
+                        i++;
+                    }
+                }
+            }
+            catch (Exception exe)
+            {
 
+            }
+        }
         private TYPE str2type(string t)
         {
             switch (t)

@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-13T16:20:06.687</Modified>
+      <Modified>2016-05-14T02:33:52.937</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\2048.exe">
       <PackagePath>entrypoint\2048.exe</PackagePath>
-      <Modified>2016-05-13T16:20:06.170</Modified>
+      <Modified>2016-05-14T02:33:52.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -472,97 +472,97 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
-      <Modified>2016-05-11T15:13:34.478</Modified>
+      <Modified>2016-05-13T16:26:47.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\0.jpg">
       <PackagePath>Assets\0.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.480</Modified>
+      <Modified>2016-05-13T16:26:47.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\1.jpg">
       <PackagePath>Assets\1.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.481</Modified>
+      <Modified>2016-05-13T16:26:47.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\11.jpg">
       <PackagePath>Assets\11.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.483</Modified>
+      <Modified>2016-05-13T16:26:47.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\13.jpg">
       <PackagePath>Assets\13.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.485</Modified>
+      <Modified>2016-05-13T16:26:47.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\2.jpg">
       <PackagePath>Assets\2.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.488</Modified>
+      <Modified>2016-05-13T16:26:47.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\31.jpg">
       <PackagePath>Assets\31.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.490</Modified>
+      <Modified>2016-05-13T16:26:47.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\32.jpg">
       <PackagePath>Assets\32.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.492</Modified>
+      <Modified>2016-05-13T16:26:47.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\33.jpg">
       <PackagePath>Assets\33.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.496</Modified>
+      <Modified>2016-05-13T16:26:47.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\5.jpg">
       <PackagePath>Assets\5.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.498</Modified>
+      <Modified>2016-05-13T16:26:47.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\background.jpg">
       <PackagePath>Assets\background.jpg</PackagePath>
-      <Modified>2016-05-11T15:13:34.505</Modified>
+      <Modified>2016-05-13T16:26:47.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-05-11T15:13:34.520</Modified>
+      <Modified>2016-05-13T16:26:47.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-05-11T15:13:34.499</Modified>
+      <Modified>2016-05-13T16:26:47.378</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-11T15:13:34.500</Modified>
+      <Modified>2016-05-13T16:26:47.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-11T15:13:34.501</Modified>
+      <Modified>2016-05-13T16:26:47.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-11T15:13:34.501</Modified>
+      <Modified>2016-05-13T16:26:47.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-11T15:13:34.502</Modified>
+      <Modified>2016-05-13T16:26:47.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-11T15:13:34.503</Modified>
+      <Modified>2016-05-13T16:26:47.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-11T15:13:34.504</Modified>
+      <Modified>2016-05-13T16:26:47.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\2048.xr.xml">
       <PackagePath>2048.xr.xml</PackagePath>
-      <Modified>2016-05-13T14:27:22.701</Modified>
+      <Modified>2016-05-14T00:47:31.352</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-13T15:11:09.100</Modified>
+      <Modified>2016-05-14T02:24:29.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\2048\2048\bin\x86\Debug\Core\2048.exe">
       <PackagePath>2048.exe</PackagePath>
-      <Modified>2016-05-13T16:20:06.683</Modified>
+      <Modified>2016-05-14T02:33:52.933</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

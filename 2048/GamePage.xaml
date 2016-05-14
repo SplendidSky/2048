@@ -69,7 +69,7 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Image x:Name="UserHead" Source="Assets/default.jpg" Height="auto" Width="auto"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0"/>
+            <Image x:Name="UserHead" Source="Assets/1.jpg" Height="auto" Width="auto"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0"/>
             <TextBlock x:Name="UserName" TextWrapping="Wrap" Text="{x:Bind Player.Username}" VerticalAlignment="Center" FontSize="21.333" TextAlignment="Center" Grid.Row="1"/>
             <TextBlock x:Name="PersonallyHighestScore" TextWrapping="Wrap" Text="{x:Bind Player.HighestScore}" VerticalAlignment="Top" FontSize="18.667" TextAlignment="Center" Grid.Row="2"/>
         </Grid>
@@ -180,10 +180,27 @@
 
             </Grid>
         </Grid>
-        <Grid x:Name="Record" HorizontalAlignment="Right" Height="720" VerticalAlignment="Top" Width="360">
-            <TextBlock x:Name="RecordList" TextWrapping="Wrap" Text="排行榜" VerticalAlignment="Top" HorizontalAlignment="Center"  FontSize="32"/>
-            <TextBlock x:Name="RecordofTheBest" HorizontalAlignment="Left" TextWrapping="Wrap" Text="1212121" VerticalAlignment="Top" Margin="129,138,0,0" FontSize="26.667"/>
-            <Image Source="Assets/default.jpg" x:Name="TheBest" HorizontalAlignment="Left" Height="62" Margin="46,128,0,0" VerticalAlignment="Top" Width="58"/>
+        <Grid x:Name="Record" HorizontalAlignment="Right" Height="720" VerticalAlignment="Top" Width="360" Padding="30, 0, 30, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="RecordList" TextWrapping="Wrap" Text="排行榜" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="52" Grid.Column="0"/>
+            <TextBlock x:Name="RecordofTheBest" HorizontalAlignment="Right" VerticalAlignment="Center" TextWrapping="Wrap" Text="{x:Bind ranknum[0]}" FontSize="26.667" Grid.Row="1"/>
+            <TextBlock  HorizontalAlignment="Right" TextWrapping="Wrap" Text="{x:Bind ranknum[1]}" VerticalAlignment="Center" FontSize="26.667" Grid.Row="2"/>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center"  Text="{x:Bind  rankname[0]}" FontSize="26.667" Grid.Row="1"/>
+            <TextBlock  HorizontalAlignment="Right" TextWrapping="Wrap" Text="{x:Bind ranknum[2]}" VerticalAlignment="Center" FontSize="26.667" Grid.Row="3"/>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center"  Text="{x:Bind  rankname[1]}" FontSize="26.667" Grid.Row="2"/>
+            <TextBlock  HorizontalAlignment="Right" TextWrapping="Wrap" Text="{x:Bind ranknum[3]}" VerticalAlignment="Center" FontSize="26.667" Grid.Row="4"/>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center"  Text="{x:Bind  rankname[2]}" FontSize="26.667" Grid.Row="3"/>
+            <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="{x:Bind ranknum[4]}" VerticalAlignment="Center" FontSize="26.667" Grid.Row="5"/>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Text="{x:Bind  rankname[3]}" FontSize="26.667" Grid.Row="4"/>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Text="{x:Bind  rankname[4]}" FontSize="26.667" Grid.Row="5"/>
         </Grid>
     </Grid>
 </Page>
